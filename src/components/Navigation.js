@@ -9,6 +9,9 @@ function Navigation(props) {
         <StyledNav>
           <NavLink to="/ground">Ground</NavLink>
           <NavLink to="/fire">Fire</NavLink>
+          <NavLink to="/water">Water</NavLink>
+          <NavLink to="/electric">Electric</NavLink>
+          <NavLink to="/ghost">Ghost</NavLink>
         </StyledNav>
       </nav>
     </div>

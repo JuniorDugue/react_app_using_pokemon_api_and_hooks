@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styled from "styled-components";
+import PokemonCard from "./PokemonCard";
 
 function PokemonList(props) {
   const [pokeList, setPokeList] = useState([]);
@@ -16,7 +17,7 @@ function PokemonList(props) {
       .then(res => {
         // console.log(res);
         // res.data.pokemon
-        setPokeList(res.data.pokemon.map(poke => poke.pokemon));
+        setPokeList(res.data.pokemon.map(poke => poke.pokemon).slice(0,4));
       })
       .catch(console.log);
   }, [type]);
