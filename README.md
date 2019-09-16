@@ -1,2 +1,0 @@
-# react_app_using_pokemon_api_and_hooks
-Created with CodeSandbox
